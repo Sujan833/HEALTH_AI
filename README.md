@@ -1,7 +1,7 @@
 
 # 🏥 HealthAI: Intelligent Disease Prediction System
 
-A Flask + Streamlit based AI application that predicts diseases based on symptoms, generates treatment plans, and responds to medical queries using both ML and IBM Watson Granite models.
+A Streamlit based AI application that predicts diseases based on symptoms, generates treatment plans, and responds to medical queries using both ML and IBM Watson Granite models.
 
 ---
 
@@ -10,7 +10,7 @@ A Flask + Streamlit based AI application that predicts diseases based on symptom
 - GenAI fallback using IBM Watson Granite for low-confidence predictions
 - Symptom-based diagnosis with profile data (age, gender, history)
 - Personalized treatment plan and recommendations
-- Streamlit web UI + Flask backend
+- Streamlit web UI
 - IBM Cloud Foundation Model integration
 
 ---
