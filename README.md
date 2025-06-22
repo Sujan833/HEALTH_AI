@@ -114,4 +114,4 @@ For cloud deployment (e.g., Heroku, Render, AWS), make sure:
 ---
 
 ## 💬 Questions or Help?
-If you face any issues, feel free to open an issue in the repository or contact me on GitHub.
+If you face any issues, feel free to open an issue in the repository  or Mail me at sujanphani964@gmail.com or contact me on GitHub.
