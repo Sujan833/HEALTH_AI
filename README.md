@@ -18,8 +18,10 @@ A Streamlit based AI application that predicts diseases based on symptoms, gener
 ## 📁 Folder Structure
 ```
 HealthAI/
-│
-├── app.py                  # Flask backend
+│__data
+|   |_medical_symptoms.csv  #a trained dataset
+├── app.py
+|__ app2.py                 # Flask backend
 ├── requirements.txt        # Required Python packages
 ├── .env                    # IBM Watson API credentials (excluded in .gitignore)
 |── treatment_plan.py       # generates treatment plans
@@ -73,14 +75,11 @@ GEN_MODEL_ID=granite-13b-chat
 
 📝 **Note:** Never share this `.env` file publicly.
 
-### 5. Run the Flask backend (API service)
-```bash
-python app.py
-```
-
-The Flask API will start at `http://localhost:5000`.
-
-### 6. Run the Streamlit frontend
+### 5. Run the app3.py
+ if you want to get disease prediction from trained dataset check the csv file once and
+ run command " streamlit run app2.py"
+              (or)
+### 6. Run the Streamlit frontend(recommended)
 ```bash
 streamlit run app.py
 ```
@@ -106,7 +105,6 @@ uploads/*
 ---
 
 ## 📦 Deployment
-For cloud deployment (e.g., Heroku, Render, AWS), make sure:
 - Flask app is wrapped with `gunicorn`
 - Environment variables are properly set
 - `Procfile` is added for Flask or Streamlit mode
