@@ -75,13 +75,13 @@ GEN_MODEL_ID=granite-13b-chat
 
 📝 **Note:** Never share this `.env` file publicly.
 
-### 5. Run the app3.py
+### 5. Run the app2.py
  if you want to get disease prediction from trained dataset check the csv file once and
  run command
  ```bash
 streamlit run app2.py
 ```
-              (or)
+            
 ### 6. Run the Ai predicted disease itself(recommended)
 ```bash
 streamlit run app.py
