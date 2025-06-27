@@ -1,18 +1,16 @@
 # chatbot.py
+
+import streamlit as st
 from ibm_watson_machine_learning.foundation_models import Model
 from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
 
 def load_model():
-    url = os.getenv("WML_URL")
-    api_key = os.getenv("WML_API_KEY")
-    project_id = os.getenv("WML_PROJECT_ID")
+    url = st.secrets["WML_URL"]
+    api_key = st.secrets["WML_API_KEY"]
+    project_id = st.secrets["WML_PROJECT_ID"]
 
     if not url or not api_key or not project_id:
-        raise ValueError("Missing one or more WML environment variables.")
+        raise ValueError("Missing one or more required IBM Cloud credentials in Streamlit secrets.")
 
     credentials = {
         "url": url,
